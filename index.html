@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini CRM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PWA -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>Mini CRM</h1>
+  </header>
+
+  <main class="app">
+    <section class="clients">
+      <h2>Клиенты</h2>
+      
+      <form class="add-client-form" id="addClientForm">
+        <input
+          type="text"
+          id="clientNameInput"
+          placeholder="Имя клиента"
+          required
+        >
+        <button type="submit">Добавить</button>
+      </form>
+    </section>
+    <ul class="client-list" id="clientList"></ul>
+    <p class="empty-state" id="emptyState">Клиентов пока нет. Добавьте первого.</p>
+    </section>
+  </main>
+
+  <!-- JS -->
+  <script src="js/app.js"></script>
+</body>
+</html>
