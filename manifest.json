@@ -1,7 +1,7 @@
 {
   "name": "Mini-CRM",
   "short_name": "Mini-CRM",
-  "start_url": ".",
+  "start_url": "/--CRM-Vanilla-JS-/",
   "display": "standalone",
   "background_color": "#1f2937",
   "theme_color": "#1f2937",

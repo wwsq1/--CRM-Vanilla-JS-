@@ -143,6 +143,8 @@ renderClients();
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function () {
-    navigator.serviceWorker.register('sw.js');
+    navigator.serviceWorker.register('/--CRM-Vanilla-JS-/sw.js', {
+      scope: '/--CRM-Vanilla-JS-/'
+    });
   });
 }
