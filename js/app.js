@@ -135,3 +135,9 @@ clientList.addEventListener('click', function (event) {
 loadClients();
 syncNextClientId();
 renderClients();
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('sw.js');
+  });
+}

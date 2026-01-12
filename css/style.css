@@ -31,7 +31,9 @@ body {
 
 .client-item {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+
   background: white;
   padding: 12px;
   margin-bottom: 8px;
@@ -44,6 +46,15 @@ body {
 
 .client-status.inactive {
   color: gray;
+}
+
+.client-name {
+  flex: 1;
+}
+
+.client-status {
+  white-space: nowrap;
+  margin-right: 8px;
 }
 
 .add-client-form {
