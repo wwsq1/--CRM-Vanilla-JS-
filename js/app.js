@@ -67,9 +67,14 @@ function renderClients() {
     deleteBtn.textContent = 'Удалить';
     deleteBtn.type = 'button';
 
+    const actions = document.createElement('div');
+    actions.className = 'client-actions';
+
+    actions.appendChild(statusSpan);
+    actions.appendChild(deleteBtn);
+
     li.appendChild(nameSpan);
-    li.appendChild(statusSpan);
-    li.appendChild(deleteBtn);
+    li.appendChild(actions);
 
     clientList.appendChild(li);
   });

@@ -50,11 +50,18 @@ body {
 
 .client-name {
   flex: 1;
+  min-width: 0;
+}
+
+.client-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .client-status {
   white-space: nowrap;
-  margin-right: 8px;
 }
 
 .add-client-form {
